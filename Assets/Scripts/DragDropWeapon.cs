@@ -17,11 +17,7 @@ public class DragDropWeapon : MonoBehaviour, IPointerDownHandler, IPointerEnterH
     {
         public int cost;
     }
-    public static event EventHandler<OnWeaponBoughtEventArgs> OnWeaponBought;
-    public class OnWeaponBoughtEventArgs : EventArgs
-    {
-        public int cost;
-    }
+
     public static event EventHandler OnClick;
 
     public static event EventHandler OnMouseExit;

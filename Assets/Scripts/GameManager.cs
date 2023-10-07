@@ -67,7 +67,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Enemy.enemyList.RemoveAt(0);
-        DragDropWeapon.OnWeaponBought += DragDropWeapon_OnWeaponBought;
         DragDropWeapon.OnMouseEnter += DragDropWeapon_OnMouseEnter;
         Enemy.OnEnemyDeath += Enemy_OnEnemyDeath;
         moneyText.text = "MONEY: " + money.ToString();
@@ -199,12 +198,6 @@ public class GameManager : MonoBehaviour
         HP -= e.damage;
         moneyText.text = "MONEY: " + money;
         HPText.text = "HP: " + HP;
-    }
-
-    private void DragDropWeapon_OnWeaponBought(object sender, DragDropWeapon.OnWeaponBoughtEventArgs e)
-    {
-        money -= e.cost;
-        
     }
 
     private void WeaponPurchase()
