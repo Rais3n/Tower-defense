@@ -2,9 +2,6 @@
 This project is a prototype of a tower defense game created in the Unity engine. To use it, you can simply download the ZIP file, add the folder to your Unity projects, and run the project.
 When the window opens, find the "TowerDefense" scene and load it.
 
-## Description
-The project is a prototype of a tower defense game created in the Unity engine.
-
 ## Installation
 To run this project, follow these steps:
 1. Download the ZIP file from this repository.
